@@ -93,7 +93,7 @@ The **Redis Exporter** runs as its own Helm release, independent of the applicat
 
 ### 1. Prerequisites
 
-This project assumes the monitoring stack from [Install Prometheus Stack in Kubernetes](../install-prometheus-stack-in-kubernetes) is already up and running, with the Online Boutique demo app (which includes a `redis-cart` deployment) deployed via [config-microservices.yaml](config-microservices.yaml). Make sure you have:
+This project assumes the monitoring stack from [Install Prometheus Stack in Kubernetes](https://github.com/mustafa-saleh/install-prometheus-stack-in-kubernetes) & [Prometheus Alerts](https://github.com/mustafa-saleh/prometheus-configure-alerting-for-our-application) is already up and running, with the Online Boutique demo app (which includes a `redis-cart` deployment) deployed via [config-microservices.yaml](config-microservices.yaml). Make sure you have:
 
 - A running **AWS EKS cluster** with the **kube-prometheus-stack** Helm chart installed in the `monitoring` namespace (Prometheus Operator, Prometheus server, Alertmanager, Grafana).
 - A `redis-cart` **Service** already running in the cluster (deployed as part of the Online Boutique microservices demo).
